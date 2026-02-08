@@ -1,46 +1,59 @@
-# TriLog - Personal Sports Website
+## 1. Short Description and Presentation of the Selected Article
 
-A single-page website to track your gym, swimming, and running sessions, analyze daily/weekly routines, and display race history on a map.
+The selected article is **“Government in the digital age: Exploring the impact of digital transformation on governmental efficiency”** (12-page academic paper).  
+It examines how digital transformation affects government performance, with a focus on whether coordinated digital efforts across departments improve overall efficiency.
 
-## Features
+The paper combines:
 
-- Add training and competition entries (date, duration, distance, time, placement, notes).
-- Daily/weekly routine cards.
-- Trend charts (8-week volume + category totals).
-- Competition map with marker popups showing:
-  - Official race link
-  - Your time
-  - Distance
-  - Placement
-- Certificate upload gallery (images and PDFs).
-- Data persistence with browser `localStorage`.
+- A theoretical framework around digital government and departmental coordination
+- Empirical analysis using data from **2012–2022**
+- Robustness checks to validate findings
 
-## Files
+In simple terms, the article argues that digital transformation is not only about adopting technology, but about aligning departments, data, and governance processes to improve public-sector outcomes.
 
-- `index.html` - page structure
-- `styles.css` - UI styling and responsive layout
-- `script.js` - app logic, charts, map, and storage
+---
 
-## Run
+## 2. ML Operation: End-to-End Findings and Results
 
-Open `/Users/cansezgin/Documents/New project/index.html` in a browser.
+### Objective
 
-## Google Maps
+Build a reusable machine-learning pipeline to analyze the article text and automatically identify its main thematic structure, while also evaluating model quality.
 
-The app works immediately with OpenStreetMap.
+### Pipeline Summary
 
-If you want Google Maps:
+The ML workflow performed these steps:
 
-1. Create/get a Google Maps JavaScript API key in Google Cloud.
-2. Paste it in the `Google Maps API Key` field on the page.
-3. Click `Use Google Map`.
+1. Extracted text from the PDF  
+2. Cleaned and normalized text  
+3. Split content into section-aware chunks  
+4. Vectorized chunks with TF-IDF  
+5. Clustered chunks into topics (auto-selecting the best number of clusters)  
+6. Evaluated model quality with unsupervised metrics  
+7. Generated structured outputs (`analysis.json`, `evaluation.json`, CSVs, and `report.md`)
 
-The key is stored locally in your browser only.
+### Main Modeling Result
 
-## Creative additions you can add next
+The model selected **4 topics (`k=4`)** as the best clustering configuration.
 
-- Goal planning (weekly distance target + progress bar)
-- PB tracker (auto-highlight personal bests)
-- Medal board (podium finishes and badges)
-- Export to CSV / PDF race report
-- Public read-only mode + private edit mode with password
+### Evaluation Results
+
+- **Silhouette:** `0.3111` (PASS)  
+- **Davies-Bouldin:** `0.6931` (PASS, lower is better)  
+- **Calinski-Harabasz:** `4.1145`  
+- **Stability ARI (multi-seed):** `0.5558` (PASS)  
+- **Coherence score:** `0.2702` (moderate)  
+- **Distinctiveness score:** `0.8208` (PASS)
+
+### Interpreted Topic Findings
+
+The discovered clusters indicate four dominant content blocks:
+
+- Digital transformation + government performance (core thesis)  
+- Public administration and coordination mechanisms (cross-department alignment)  
+- Empirical/statistical analysis and robustness testing (method/results sections)  
+- Reference-heavy content (citations/DOIs/URLs, expected in academic PDFs)
+
+### Conclusion
+
+The ML operation successfully captured the article’s main intellectual structure and produced stable, interpretable topic groups.  
+Quality metrics indicate that clustering is reliable for exploratory analysis. Coherence is moderate, so results should be presented as **theme discovery** rather than strict semantic labeling.
