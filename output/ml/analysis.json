@@ -1,0 +1,98 @@
+{
+  "pdf_path": "/Users/cansezgin/Downloads/digital_age.pdf",
+  "pages": 12,
+  "chunks": 12,
+  "topics": [
+    {
+      "topic_id": 0,
+      "top_terms": [
+        "zi",
+        "department",
+        "ij",
+        "digital",
+        "government",
+        "transformation",
+        "mi",
+        "governmental",
+        "dlnp",
+        "dlnzi"
+      ],
+      "representative_chunks": [
+        "chunk_005",
+        "chunk_004",
+        "chunk_006"
+      ],
+      "section_distribution": {
+        "Unknown": 3
+      }
+    },
+    {
+      "topic_id": 1,
+      "top_terms": [
+        "digital",
+        "government",
+        "transformation",
+        "public",
+        "governmental",
+        "research",
+        "china",
+        "countries",
+        "efficiency",
+        "united"
+      ],
+      "representative_chunks": [
+        "chunk_002",
+        "chunk_003",
+        "chunk_001"
+      ],
+      "section_distribution": {
+        "Unknown": 3
+      }
+    },
+    {
+      "topic_id": 2,
+      "top_terms": [
+        "https",
+        "org",
+        "doi",
+        "rev",
+        "public",
+        "econ",
+        "digital",
+        "government",
+        "manag",
+        "inf"
+      ],
+      "representative_chunks": [
+        "chunk_012",
+        "chunk_011"
+      ],
+      "section_distribution": {
+        "Unknown": 2
+      }
+    },
+    {
+      "topic_id": 3,
+      "top_terms": [
+        "yes",
+        "digital",
+        "transformation",
+        "efficiency",
+        "government",
+        "gov",
+        "pboc",
+        "var",
+        "doe",
+        "dof"
+      ],
+      "representative_chunks": [
+        "chunk_009",
+        "chunk_008",
+        "chunk_010"
+      ],
+      "section_distribution": {
+        "Unknown": 4
+      }
+    }
+  ]
+}

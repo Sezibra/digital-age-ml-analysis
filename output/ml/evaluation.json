@@ -1,0 +1,46 @@
+{
+  "selected_k": 4,
+  "silhouette": 0.3111302549712348,
+  "davies_bouldin": 0.6930918841714994,
+  "calinski_harabasz": 4.114501065542805,
+  "stability_ari_mean": 0.5558460421205519,
+  "coherence_score": 0.27019016362906983,
+  "distinctiveness_score": 0.8208061002178649,
+  "candidate_scores": [
+    {
+      "k": 2.0,
+      "silhouette": 0.11886358111876916,
+      "davies_bouldin": 1.145764683932339,
+      "calinski_harabasz": 2.892063113744699,
+      "stability_ari_mean": 0.05650396378819436
+    },
+    {
+      "k": 3.0,
+      "silhouette": 0.070397651545009,
+      "davies_bouldin": 1.31729963473082,
+      "calinski_harabasz": 2.9191419696349667,
+      "stability_ari_mean": 0.11758887898564158
+    },
+    {
+      "k": 4.0,
+      "silhouette": 0.3111302549712348,
+      "davies_bouldin": 0.6930918841714994,
+      "calinski_harabasz": 4.114501065542805,
+      "stability_ari_mean": 0.5558460421205519
+    },
+    {
+      "k": 5.0,
+      "silhouette": 0.14465718856195942,
+      "davies_bouldin": 0.6134209891873244,
+      "calinski_harabasz": 2.550137933815065,
+      "stability_ari_mean": 0.617693522906793
+    },
+    {
+      "k": 6.0,
+      "silhouette": 0.0936405472732779,
+      "davies_bouldin": 0.6601477226819022,
+      "calinski_harabasz": 2.529151006692844,
+      "stability_ari_mean": 0.5066947909024212
+    }
+  ]
+}
