@@ -17,7 +17,13 @@ In simple terms, the article argues that digital transformation is not only abou
 
 ### Objective
 
-Build a reusable machine-learning pipeline to analyze the article text and automatically identify its main thematic structure, while also evaluating model quality.
+Build a reusable machine learning pipeline that:
+1. Reads article text from PDF
+2. Extracts and structures textual data
+3. Discovers thematic topics automatically
+4. Evaluates model quality using unsupervised metrics
+5. Produces report-ready outputs
+
 
 ### Pipeline Summary
 
