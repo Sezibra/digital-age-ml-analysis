@@ -1,4 +1,4 @@
-## 1. Short Description and Presentation of the Selected Article
+## 1. Short Description of the Selected Article
 
 The selected article is **“Government in the digital age: Exploring the impact of digital transformation on governmental efficiency”** (12-page academic paper).  
 It examines how digital transformation affects government performance, with a focus on whether coordinated digital efforts across departments improve overall efficiency.
