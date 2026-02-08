@@ -53,6 +53,32 @@ The discovered clusters indicate four dominant content blocks:
 - Empirical/statistical analysis and robustness testing (method/results sections)  
 - Reference-heavy content (citations/DOIs/URLs, expected in academic PDFs)
 
+### Output Files and Their Purpose
+
+#### `analysis.json`
+Structured topic outputs (terms, representative chunks, section distributions)
+#### `evaluation.json`
+Full evaluation metrics and candidate-k records
+#### `chunk_topics.csv`
+Row-level chunk-to-topic assignment table
+#### `topic_terms.csv`
+Ranked terms for each discovered topic
+#### `report.md`
+Human-readable summary with PASS/WARN metric flags
+
+### Interpreted Topic Findings
+
+- Single-document analysis 
+- No supervised labels, so no accuracy/F1
+- Reference sections can influence one topic cluster
+
+### Future Improvements
+
+- Add optional reference/bibliography filtering
+- Add embedding-based semantic clustering
+- Add multi-PDF batch analysis
+- Add visualization dashboard for topic trends
+
 ### Conclusion
 
 The ML operation successfully captured the article’s main intellectual structure and produced stable, interpretable topic groups.  
